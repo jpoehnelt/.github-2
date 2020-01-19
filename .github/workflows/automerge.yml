@@ -23,4 +23,5 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_DELETE_BRANCH: true
-          UPDATE_LABELS: ':shipit: merge'
+          MERGE_LABELS: ":shipit: merge"
+          UPDATE_LABELS: ":shipit: merge"
