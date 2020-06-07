@@ -1,3 +1,6 @@
+- name: ":shipit: merge"
+  color: "98ed98"
+  description: "Shipit! asdf"
 - name: ":beetle: bug"
   color: "d73a4a"
   description: "Something isn't working"
