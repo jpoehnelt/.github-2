@@ -46,7 +46,7 @@
 - name: ":construction: deprecated"
   color: "dd824d"
   description: "Deprecated functionality"
-- name: ":skull_and_crossbones: removed"
+- name: ":wastebasket: removed"
   color: "fce99f"
   description: "Removed functionality"
 - name: ":old_key: security"
