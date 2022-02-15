@@ -52,3 +52,6 @@
 - name: ":old_key: security"
   color: "cbce1e"
   description: "Security related issue"
+- name: ':briefcase: private-dependencies'
+  color: "edc397"
+  description: "Private dependency"
