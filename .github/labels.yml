@@ -55,3 +55,9 @@
 - name: ':truck: private-dependencies'
   color: "edc397"
   description: "Private dependency"
+- name: ':trident: rebase'
+  color: "ffcc66"
+  description: "Rebase branch"
+- name: ':vertical_traffic_light: stop updating'
+  color: "800000"
+  description: "Rebase branch"
