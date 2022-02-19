@@ -113,6 +113,12 @@
       "automerge": true
     },
     {
+      "matchPackagePatterns": ["^bunit"],
+      "groupName": "bunit",
+      "labels": [":truck: private-dependencies"],
+      "automerge": true
+    },
+    {
       "matchManagers": ["nuget"],
       "matchPackagePatterns": [
         "^System\\.Collections\\.Immutable",
@@ -122,6 +128,11 @@
       ],
       "labels": [":package: dependencies"],
       "automerge": true
+    },
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/RocketSurgeonsGuild"],
+      "labels": [":package: dependencies"],
+      "groupName": "Rocket Surgery Other (deps)"
     },
     {
       "matchSourceUrlPrefixes": [
@@ -136,11 +147,6 @@
       ],
       "labels": [":truck: private-dependencies"],
       "groupName": "Rocket Surgery Testing (deps)"
-    },
-    {
-      "matchSourceUrlPrefixes": ["https://github.com/RocketSurgeonsGuild"],
-      "labels": [":package: dependencies"],
-      "groupName": "Rocket Surgery Other (deps)"
     }
   ]
 }
