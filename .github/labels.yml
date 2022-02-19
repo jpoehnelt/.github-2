@@ -60,4 +60,4 @@
   description: "Rebase branch"
 - name: ':vertical_traffic_light: stop updating'
   color: "800000"
-  description: "Rebase branch"
+  description: "Stop Updating"
