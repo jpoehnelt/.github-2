@@ -132,21 +132,28 @@
     {
       "matchSourceUrlPrefixes": ["https://github.com/RocketSurgeonsGuild"],
       "labels": [":package: dependencies"],
-      "groupName": "Rocket Surgery Other (deps)"
+      "groupName": "Rocket Surgery Other"
     },
     {
       "matchSourceUrlPrefixes": [
         "https://github.com/RocketSurgeonsGuild/Conventions"
       ],
       "labels": [":package: dependencies"],
-      "groupName": "Rocket Surgery Conventions (deps)"
+      "groupName": "Rocket Surgery Conventions"
     },
     {
       "matchSourceUrlPrefixes": [
         "https://github.com/RocketSurgeonsGuild/Testing"
       ],
       "labels": [":truck: private-dependencies"],
-      "groupName": "Rocket Surgery Testing (deps)"
+      "groupName": "Rocket Surgery Testing"
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/RocketSurgeonsGuild/Extensions"
+      ],
+      "labels": [":package: dependencies"],
+      "groupName": "Rocket Surgery Extensions"
     }
   ]
 }
