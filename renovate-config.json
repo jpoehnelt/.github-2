@@ -119,6 +119,24 @@
       "automerge": true
     },
     {
+      "matchPackagePatterns": ["^FluentValidation"],
+      "groupName": "fluentvalidation",
+      "labels": [":package: dependencies"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^FluentAssertions"],
+      "groupName": "fluentassertions",
+      "labels": [":truck: private-dependencies"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^verify"],
+      "groupName": "verify",
+      "labels": [":truck: private-dependencies"],
+      "automerge": true
+    },
+    {
       "matchManagers": ["nuget"],
       "matchPackagePatterns": [
         "^System\\.Collections\\.Immutable",
