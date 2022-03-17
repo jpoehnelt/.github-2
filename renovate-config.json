@@ -131,7 +131,7 @@
       "automerge": true
     },
     {
-      "matchPackagePatterns": ["^verify"],
+      "matchPackagePatterns": ["^Verify"],
       "groupName": "verify",
       "labels": [":truck: private-dependencies"],
       "automerge": true
