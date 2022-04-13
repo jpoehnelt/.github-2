@@ -4,8 +4,7 @@
     "config:base",
     ":automergePatch",
     ":separateMajorReleases",
-    ":separateMultipleMajorReleases",
-    ":separatePatchReleases",
+    ":combinePatchMinorReleases",
     ":enableVulnerabilityAlertsWithLabel(:old_key: security)",
     ":dependencyDashboard"
   ],
