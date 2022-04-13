@@ -203,6 +203,13 @@
         "https://github.com/dotnet/extensions",
         "https://github.com/dotnet/runtime"
       ]
+    },
+    {
+      "description": "dotnet msbuild",
+      "groupName": "dotnet msbuild",
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/msbuild"
+      ]
     }
   ]
 }
