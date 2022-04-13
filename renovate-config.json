@@ -33,27 +33,6 @@
   },
   "packageRules": [
     {
-      "extends": "monorepo:dotnet",
-      "groupName": "dotnet monorepo",
-      "description": "dotnet monorepo",
-      "enabled": true,
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest",
-        "lockFileMaintenance",
-        "rollback",
-        "bump"
-      ],
-      "matchSourceUrlPrefixes": [
-        "https://github.com/dotnet/aspnetcore",
-        "https://github.com/dotnet/efcore",
-        "https://github.com/dotnet/extensions",
-        "https://github.com/dotnet/runtime"
-      ]
-    },
-    {
       "matchManagers": ["nuget"],
       "groupName": "build dependencies",
       "matchPackagePatterns": [
@@ -201,6 +180,26 @@
       ],
       "labels": [":package: dependencies"],
       "groupName": "Rocket Surgery Extensions"
+    },
+    {
+      "groupName": "dotnet monorepo",
+      "description": "dotnet monorepo",
+      "enabled": true,
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/aspnetcore",
+        "https://github.com/dotnet/efcore",
+        "https://github.com/dotnet/extensions",
+        "https://github.com/dotnet/runtime"
+      ]
     }
   ]
 }
