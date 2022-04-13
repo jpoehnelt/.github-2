@@ -184,6 +184,17 @@
     {
       "description": "dotnet monorepo",
       "groupName": "dotnet monorepo",
+      "enabled": false,
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/aspnetcore",
+        "https://github.com/dotnet/efcore",
+        "https://github.com/dotnet/extensions",
+        "https://github.com/dotnet/runtime"
+      ]
+    },
+    {
+      "description": "dotnet monorepo",
+      "groupName": "dotnet monorepo (minor / patch only)",
       "enabled": true,
       "matchUpdateTypes": [
         "minor",
