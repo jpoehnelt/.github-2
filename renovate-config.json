@@ -2,9 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":combinePatchMinorReleases",
     ":automergePatch",
-    ":enableVulnerabilityAlertsWithLabel(:old_key: security)"
+    ":separateMajorReleases",
+    ":separateMultipleMajorReleases",
+    ":separatePatchReleases",
+    ":enableVulnerabilityAlertsWithLabel(:old_key: security)",
+    ":dependencyDashboard"
   ],
   "prHourlyLimit": 10,
   "prConcurrentLimit": 0,
@@ -14,8 +17,6 @@
     }
   ],
   "platformAutomerge": true,
-  "separateMajorMinor": true,
-  "separateMinorPatch": true,
   "automergeType": "pr",
   "automergeStrategy": "rebase",
   "rebaseWhen": "auto",
@@ -207,9 +208,7 @@
     {
       "description": "dotnet msbuild",
       "groupName": "dotnet msbuild",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/dotnet/msbuild"
-      ]
+      "matchSourceUrlPrefixes": ["https://github.com/dotnet/msbuild"]
     }
   ]
 }
