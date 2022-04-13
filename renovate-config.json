@@ -33,7 +33,15 @@
     {
       "description": "dotnet monorepo",
       "enabled": true,
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
       "matchSourceUrlPrefixes": [
         "https://github.com/dotnet/aspnetcore",
         "https://github.com/dotnet/efcore",
