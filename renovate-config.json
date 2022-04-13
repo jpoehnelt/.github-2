@@ -126,6 +126,12 @@
       "automerge": false
     },
     {
+      "matchPackagePatterns": ["^DryIoc"],
+      "groupName": "dryioc",
+      "labels": [":package: dependencies"],
+      "automerge": false
+    },
+    {
       "matchPackagePatterns": ["^FluentAssertions"],
       "groupName": "fluentassertions",
       "labels": [":truck: private-dependencies"],
