@@ -20,7 +20,6 @@
   "labels": [":package: dependencies"],
   "rebaseLabel": ":trident: rebase",
   "stopUpdatingLabel": ":vertical_traffic_light: stop updating",
-  "ignorePaths": ["**/Directory.Packages.support.props"],
   "github-actions": {
     "fileMatch": [
       "(^workflow-templates|\\.github\\/workflows)\\/[^/]+\\.ya?ml$",
@@ -31,6 +30,17 @@
     "labels": [":truck: private-dependencies"]
   },
   "packageRules": [
+    {
+      "description": "dotnet monorepo",
+      "enabled": true,
+      "matchUpdateTypes": ["minor"],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/aspnetcore",
+        "https://github.com/dotnet/efcore",
+        "https://github.com/dotnet/extensions",
+        "https://github.com/dotnet/runtime"
+      ]
+    },
     {
       "matchManagers": ["nuget"],
       "groupName": "build dependencies",
