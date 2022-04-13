@@ -20,6 +20,7 @@
   "labels": [":package: dependencies"],
   "rebaseLabel": ":trident: rebase",
   "stopUpdatingLabel": ":vertical_traffic_light: stop updating",
+  "ignorePaths": ["**/Directory.Packages.support.props"],
   "github-actions": {
     "fileMatch": [
       "(^workflow-templates|\\.github\\/workflows)\\/[^/]+\\.ya?ml$",
