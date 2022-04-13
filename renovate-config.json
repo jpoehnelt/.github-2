@@ -182,8 +182,17 @@
       "groupName": "Rocket Surgery Extensions"
     },
     {
-      "groupName": "dotnet monorepo",
       "description": "dotnet monorepo",
+      "enabled": false,
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/aspnetcore",
+        "https://github.com/dotnet/efcore",
+        "https://github.com/dotnet/extensions",
+        "https://github.com/dotnet/runtime"
+      ]
+    },
+    {
+      "extends": "monorepo:dotnet",
       "enabled": true,
       "matchUpdateTypes": [
         "minor",
@@ -194,12 +203,7 @@
         "rollback",
         "bump"
       ],
-      "matchSourceUrlPrefixes": [
-        "https://github.com/dotnet/aspnetcore",
-        "https://github.com/dotnet/efcore",
-        "https://github.com/dotnet/extensions",
-        "https://github.com/dotnet/runtime"
-      ]
+      "groupName": "dotnet monorepo"
     }
   ]
 }
