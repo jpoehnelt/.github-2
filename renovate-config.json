@@ -2,9 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":combinePatchMinorReleases",
     ":automergePatch",
-    ":enableVulnerabilityAlertsWithLabel(:old_key: security)"
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":enableVulnerabilityAlertsWithLabel(:old_key: security)",
+    ":dependencyDashboard"
   ],
   "prHourlyLimit": 10,
   "prConcurrentLimit": 0,
@@ -131,6 +133,12 @@
       "automerge": false
     },
     {
+      "matchPackagePatterns": ["^DryIoc"],
+      "groupName": "dryioc",
+      "labels": [":package: dependencies"],
+      "automerge": false
+    },
+    {
       "matchPackagePatterns": ["^FluentAssertions"],
       "groupName": "fluentassertions",
       "labels": [":truck: private-dependencies"],
@@ -178,6 +186,34 @@
       ],
       "labels": [":package: dependencies"],
       "groupName": "Rocket Surgery Extensions"
+    },
+    {
+      "description": "dotnet monorepo",
+      "groupName": "dotnet monorepo",
+      "enabled": false,
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/aspnetcore",
+        "https://github.com/dotnet/efcore",
+        "https://github.com/dotnet/extensions",
+        "https://github.com/dotnet/runtime"
+      ]
+    },
+    {
+      "description": "dotnet monorepo [minor/patch]",
+      "groupName": "dotnet monorepo [minor/patch]",
+      "enabled": true,
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/dotnet/aspnetcore",
+        "https://github.com/dotnet/efcore",
+        "https://github.com/dotnet/extensions",
+        "https://github.com/dotnet/runtime"
+      ]
+    },
+    {
+      "description": "dotnet msbuild",
+      "groupName": "dotnet msbuild",
+      "matchSourceUrlPrefixes": ["https://github.com/dotnet/msbuild"]
     }
   ]
 }
