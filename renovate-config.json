@@ -125,6 +125,12 @@
       "automerge": false
     },
     {
+      "matchPackagePatterns": ["^NodaTime"],
+      "groupName": "nodatime",
+      "labels": [":package: dependencies"],
+      "automerge": false
+    },
+    {
       "matchPackagePatterns": ["^FluentAssertions"],
       "groupName": "fluentassertions",
       "labels": [":truck: private-dependencies"],
