@@ -1,4 +1,4 @@
-name: sync-labels
+name: self-host-test
 on:
   push:
     branches:
