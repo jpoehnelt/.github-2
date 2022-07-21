@@ -34,12 +34,21 @@
   "packageRules": [
     {
       "matchManagers": ["nuget"],
+      "groupName": "nuke",
+      "matchPackagePatterns": [
+        "^nuke.globaltool",
+        "^Nuke.Common",
+        "^Rocket\\.Surgery\\.Nuke$"
+      ],
+      "labels": [":truck: private-dependencies"],
+      "automerge": true
+    },
+    {
+      "matchManagers": ["nuget"],
       "groupName": "build dependencies",
       "matchPackagePatterns": [
-        "^Nuke.Common",
         "^Microsoft\\.NET\\.Test\\.Sdk$",
-        "^Rocket\\.Surgery\\.MSBuild$",
-        "^Rocket\\.Surgery\\.Nuke$"
+        "^Rocket\\.Surgery\\.MSBuild$"
       ],
       "labels": [":truck: private-dependencies"],
       "automerge": true
