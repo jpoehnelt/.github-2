@@ -139,6 +139,12 @@
       "automerge": false
     },
     {
+      "matchPackagePatterns": ["^OpenTelemetry"],
+      "groupName": "open-telemetry",
+      "labels": [":package: dependencies"],
+      "automerge": false
+    },
+    {
       "matchPackagePatterns": ["^FluentAssertions"],
       "groupName": "fluentassertions",
       "labels": [":truck: private-dependencies"],
