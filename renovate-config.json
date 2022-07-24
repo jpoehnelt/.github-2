@@ -210,6 +210,11 @@
       "groupName": "Rocket Surgery Extensions"
     },
     {
+      "matchPackagePatterns": ["^RavenDb"],
+      "groupName": "ravendb",
+      "labels": [":package: dependencies"]
+    },
+    {
       "description": "dotnet monorepo",
       "groupName": "dotnet monorepo",
       "enabled": false,
