@@ -183,6 +183,13 @@
     },
     {
       "matchSourceUrlPrefixes": [
+        "https://github.com/RocketSurgeonsGuild/LaunchPad"
+      ],
+      "labels": [":package: dependencies"],
+      "groupName": "Rocket Surgery Launch Pad"
+    },
+    {
+      "matchSourceUrlPrefixes": [
         "https://github.com/RocketSurgeonsGuild/Conventions"
       ],
       "labels": [":package: dependencies"],
