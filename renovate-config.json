@@ -220,6 +220,11 @@
       "labels": [":package: dependencies"]
     },
     {
+      "matchPackagePatterns": ["^Serilog"],
+      "groupName": "serilog",
+      "labels": [":package: dependencies"]
+    },
+    {
       "description": "dotnet monorepo",
       "groupName": "dotnet monorepo",
       "enabled": false,
