@@ -215,6 +215,11 @@
       "labels": [":package: dependencies"]
     },
     {
+      "matchSourceUrlPrefixes": ["https://github.com/Serilog"],
+      "groupName": "serilog",
+      "labels": [":package: dependencies"]
+    },
+    {
       "description": "dotnet monorepo",
       "groupName": "dotnet monorepo",
       "enabled": false,
