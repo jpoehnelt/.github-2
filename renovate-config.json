@@ -225,6 +225,11 @@
       "labels": [":package: dependencies"]
     },
     {
+      "matchPackagePatterns": ["^NetTopologySuite"],
+      "groupName": "nettopologysuite",
+      "labels": [":package: dependencies"]
+    },
+    {
       "matchPackagePatterns": ["^MediatR"],
       "groupName": "mediatr",
       "labels": [":package: dependencies"]
