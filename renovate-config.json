@@ -261,6 +261,11 @@
       "description": "dotnet msbuild",
       "groupName": "dotnet msbuild",
       "matchSourceUrlPrefixes": ["https://github.com/dotnet/msbuild"]
+    },
+    {
+      "description": "azure functions",
+      "groupName": "azure functions",
+      "matchPackagePatterns": ["^microsoft.azure.functions"]
     }
   ]
 }
