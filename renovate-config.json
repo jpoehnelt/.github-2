@@ -235,6 +235,11 @@
       "labels": [":package: dependencies"]
     },
     {
+      "matchPackagePatterns": ["^Spectre"],
+      "matchSourceUrlPrefixes": ["https://github.com/spectreconsole"],
+      "labels": [":package: dependencies"]
+    },
+    {
       "description": "dotnet monorepo",
       "groupName": "dotnet monorepo",
       "enabled": false,
