@@ -235,7 +235,7 @@
       "labels": [":package: dependencies"]
     },
     {
-      "matchPackagePatterns": ["^Spectre"],
+      "groupName": "spectre",
       "matchSourceUrlPrefixes": ["https://github.com/spectreconsole"],
       "labels": [":package: dependencies"]
     },
