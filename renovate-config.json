@@ -240,6 +240,11 @@
       "labels": [":package: dependencies"]
     },
     {
+      "groupName": "chillicream-gql",
+      "matchSourceUrlPrefixes": ["https://github.com/ChilliCream/graphql-platform"],
+      "labels": [":package: dependencies"]
+    },
+    {
       "description": "dotnet monorepo",
       "groupName": "dotnet monorepo",
       "enabled": false,
